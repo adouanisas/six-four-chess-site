@@ -261,8 +261,34 @@
                 background: #3a3a3c;
             }
 
+            a {
+                color: #5eb3f6;
+            }
+
+            .language-nav a.active {
+                color: #fff;
+            }
+
+            td {
+                color: #f5f5f7;
+            }
+
+            .badge-optional {
+                background: #48484a;
+                color: #a1a1a6;
+            }
+
             footer {
                 border-top-color: #3a3a3c;
+                color: #a1a1a6;
+            }
+
+            footer a {
+                color: #5eb3f6;
+            }
+
+            table {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
             }
         }
     </style>
@@ -315,13 +341,15 @@
                     <li>Mosse effettuate durante la partita</li>
                     <li>Stato corrente della partita</li>
                     <li>Timestamp delle azioni</li>
+                    <li>Nome visualizzato (nome utente scelto dal giocatore)</li>
+                    <li>Identificatore di installazione del dispositivo (anonimo)</li>
+                    <li>Statistiche di gioco (partite giocate, partite vinte)</li>
                 </ul>
 
                 <h4>Questi dati:</h4>
                 <ul>
-                    <li>Sono anonimi (nessun account utente, nessuna email, nessun nome)</li>
-                    <li>Sono archiviati temporaneamente su Firebase</li>
-                    <li>Vengono eliminati automaticamente dopo l'abbandono o il completamento della partita</li>
+                    <li>Utilizzano autenticazione anonima (nessuna email o password richiesta)</li>
+                    <li>Sono archiviati su Firebase per la durata dell'utilizzo</li>
                     <li>NON vengono MAI utilizzati per scopi pubblicitari</li>
                 </ul>
             </div>
@@ -329,7 +357,7 @@
             <h3>Dati NON Raccolti</h3>
             <p>NON raccogliamo:</p>
             <ul>
-                <li>Nome, cognome o identit&agrave;</li>
+                <li>Nome reale, cognome o identit&agrave; legale</li>
                 <li>Indirizzo email</li>
                 <li>Posizione GPS</li>
                 <li>Contatti</li>
@@ -428,13 +456,13 @@
             <p>Potete richiedere quali dati deteniamo su di voi. Per la modalit&agrave; online, potete visualizzare le vostre partite attive nell'app.</p>
 
             <h3>Diritto di Rettifica</h3>
-            <p>Poich&eacute; non memorizziamo dati personali identificativi, non ci sono dati da rettificare.</p>
+            <p>Potete modificare il vostro nome visualizzato in qualsiasi momento nell'app. Per altre correzioni, contattateci.</p>
 
             <h3>Diritto alla Cancellazione</h3>
             <ul>
                 <li><strong>Modalit&agrave; offline:</strong> Disinstallate l'app per eliminare tutti i dati locali</li>
-                <li><strong>Modalit&agrave; online:</strong> Le partite vengono eliminate automaticamente dopo l'abbandono/completamento</li>
-                <li><strong>Richiesta esplicita:</strong> Contattateci per eliminare dati specifici</li>
+                <li><strong>Modalit&agrave; online:</strong> Contattateci per richiedere la cancellazione del vostro profilo giocatore e dei dati delle partite</li>
+                <li><strong>Richiesta esplicita:</strong> Contattateci a adouani.sas@gmail.com per eliminare dati specifici</li>
             </ul>
 
             <h3>Diritto alla Portabilit&agrave; dei Dati</h3>
@@ -503,7 +531,11 @@
                     </tr>
                     <tr>
                         <td>Partite online completate</td>
-                        <td>Eliminazione immediata</td>
+                        <td>Conservate fino a richiesta di cancellazione</td>
+                    </tr>
+                    <tr>
+                        <td>Profilo giocatore (nome visualizzato, statistiche)</td>
+                        <td>Conservato fino a richiesta di cancellazione</td>
                     </tr>
                     <tr>
                         <td>Consensi</td>

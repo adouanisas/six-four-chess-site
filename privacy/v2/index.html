@@ -261,8 +261,34 @@
                 background: #3a3a3c;
             }
 
+            a {
+                color: #5eb3f6;
+            }
+
+            .language-nav a.active {
+                color: #fff;
+            }
+
+            td {
+                color: #f5f5f7;
+            }
+
+            .badge-optional {
+                background: #48484a;
+                color: #a1a1a6;
+            }
+
             footer {
                 border-top-color: #3a3a3c;
+                color: #a1a1a6;
+            }
+
+            footer a {
+                color: #5eb3f6;
+            }
+
+            table {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
             }
         }
     </style>
@@ -315,13 +341,15 @@
                     <li>Moves played during the game</li>
                     <li>Current game state</li>
                     <li>Action timestamps</li>
+                    <li>Display name (player-chosen username)</li>
+                    <li>Device installation identifier (anonymous)</li>
+                    <li>Game statistics (games played, games won)</li>
                 </ul>
 
                 <h4>This data:</h4>
                 <ul>
-                    <li>Is anonymous (no user account, no email, no name)</li>
-                    <li>Is temporarily stored on Firebase</li>
-                    <li>Is automatically deleted after game abandonment or completion</li>
+                    <li>Uses anonymous authentication (no email or password required)</li>
+                    <li>Is stored on Firebase for the duration of use</li>
                     <li>Is NEVER used for advertising purposes</li>
                 </ul>
             </div>
@@ -329,7 +357,7 @@
             <h3>Data NOT Collected</h3>
             <p>We do NOT collect:</p>
             <ul>
-                <li>Name, surname, or identity</li>
+                <li>Real name, surname, or legal identity</li>
                 <li>Email address</li>
                 <li>GPS location</li>
                 <li>Contacts</li>
@@ -428,13 +456,13 @@
             <p>You can request what data we hold about you. For online mode, you can view your active games in the app.</p>
 
             <h3>Right to Rectification</h3>
-            <p>As we do not store identifying personal data, there is no data to rectify.</p>
+            <p>You can change your display name at any time within the app. For other corrections, contact us.</p>
 
             <h3>Right to Erasure</h3>
             <ul>
                 <li><strong>Offline mode:</strong> Uninstall the app to delete all local data</li>
-                <li><strong>Online mode:</strong> Games are automatically deleted after abandonment/completion</li>
-                <li><strong>Explicit request:</strong> Contact us to delete specific data</li>
+                <li><strong>Online mode:</strong> Contact us to request deletion of your player profile and game data</li>
+                <li><strong>Explicit request:</strong> Contact us at adouani.sas@gmail.com to delete specific data</li>
             </ul>
 
             <h3>Right to Data Portability</h3>
@@ -503,7 +531,11 @@
                     </tr>
                     <tr>
                         <td>Completed online games</td>
-                        <td>Immediate deletion</td>
+                        <td>Retained until deletion request</td>
+                    </tr>
+                    <tr>
+                        <td>Player profile (display name, stats)</td>
+                        <td>Retained until deletion request</td>
                     </tr>
                     <tr>
                         <td>Consents</td>

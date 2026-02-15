@@ -261,8 +261,34 @@
                 background: #3a3a3c;
             }
 
+            a {
+                color: #5eb3f6;
+            }
+
+            .language-nav a.active {
+                color: #fff;
+            }
+
+            td {
+                color: #f5f5f7;
+            }
+
+            .badge-optional {
+                background: #48484a;
+                color: #a1a1a6;
+            }
+
             footer {
                 border-top-color: #3a3a3c;
+                color: #a1a1a6;
+            }
+
+            footer a {
+                color: #5eb3f6;
+            }
+
+            table {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
             }
         }
     </style>
@@ -315,13 +341,15 @@
                     <li>Coups jou&eacute;s pendant la partie</li>
                     <li>&Eacute;tat de la partie en cours</li>
                     <li>Horodatage des actions</li>
+                    <li>Nom d'affichage (pseudo choisi par le joueur)</li>
+                    <li>Identifiant d'installation de l'appareil (anonyme)</li>
+                    <li>Statistiques de jeu (parties jou&eacute;es, parties gagn&eacute;es)</li>
                 </ul>
 
                 <h4>Ces donn&eacute;es :</h4>
                 <ul>
-                    <li>Sont anonymes (pas de compte utilisateur, pas d'email, pas de nom)</li>
-                    <li>Sont stock&eacute;es temporairement sur Firebase</li>
-                    <li>Sont supprim&eacute;es automatiquement apr&egrave;s abandon ou fin de partie</li>
+                    <li>Utilisent une authentification anonyme (aucun email ni mot de passe requis)</li>
+                    <li>Sont stock&eacute;es sur Firebase pendant la dur&eacute;e d'utilisation</li>
                     <li>Ne sont JAMAIS utilis&eacute;es &agrave; des fins publicitaires</li>
                 </ul>
             </div>
@@ -329,7 +357,7 @@
             <h3>Donn&eacute;es NON Collect&eacute;es</h3>
             <p>Nous ne collectons PAS :</p>
             <ul>
-                <li>Nom, pr&eacute;nom ou identit&eacute;</li>
+                <li>Nom r&eacute;el, pr&eacute;nom ou identit&eacute; l&eacute;gale</li>
                 <li>Adresse email</li>
                 <li>Localisation GPS</li>
                 <li>Contacts</li>
@@ -428,13 +456,13 @@
             <p>Vous pouvez demander quelles donn&eacute;es nous d&eacute;tenons sur vous. Pour le mode en ligne, vous pouvez consulter vos parties actives dans l'application.</p>
 
             <h3>Droit de Rectification</h3>
-            <p>Comme nous ne stockons pas de donn&eacute;es personnelles identifiantes, il n'y a pas de donn&eacute;es &agrave; rectifier.</p>
+            <p>Vous pouvez modifier votre nom d'affichage &agrave; tout moment dans l'application. Pour toute autre correction, contactez-nous.</p>
 
             <h3>Droit &agrave; l'Effacement</h3>
             <ul>
                 <li><strong>Mode hors ligne :</strong> D&eacute;sinstallez l'application pour supprimer toutes les donn&eacute;es locales</li>
-                <li><strong>Mode en ligne :</strong> Les parties sont automatiquement supprim&eacute;es apr&egrave;s abandon/fin de partie</li>
-                <li><strong>Demande explicite :</strong> Contactez-nous pour supprimer des donn&eacute;es sp&eacute;cifiques</li>
+                <li><strong>Mode en ligne :</strong> Contactez-nous pour demander la suppression de votre profil joueur et de vos donn&eacute;es de parties</li>
+                <li><strong>Demande explicite :</strong> Contactez-nous &agrave; adouani.sas@gmail.com pour supprimer des donn&eacute;es sp&eacute;cifiques</li>
             </ul>
 
             <h3>Droit &agrave; la Portabilit&eacute;</h3>
@@ -503,7 +531,11 @@
                     </tr>
                     <tr>
                         <td>Parties en ligne termin&eacute;es</td>
-                        <td>Suppression imm&eacute;diate</td>
+                        <td>Conserv&eacute;es jusqu'&agrave; demande de suppression</td>
+                    </tr>
+                    <tr>
+                        <td>Profil joueur (pseudo, statistiques)</td>
+                        <td>Conserv&eacute; jusqu'&agrave; demande de suppression</td>
                     </tr>
                     <tr>
                         <td>Consentements</td>
