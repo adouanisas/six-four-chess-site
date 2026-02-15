@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixFour Chess - Politique de Confidentialit&eacute;</title>
+    <meta name="description" content="Politique de confidentialit&eacute; de l'application SixFour Chess - Conforme RGPD et CNIL">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        .last-updated {
+            color: #6e6e73;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+
+        .publisher {
+            color: #515154;
+            font-weight: 500;
+            margin-top: 8px;
+        }
+
+        .language-nav {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            border-radius: 12px;
+        }
+
+        .language-nav a {
+            display: inline-block;
+            margin: 0 12px;
+            padding: 8px 20px;
+            text-decoration: none;
+            color: #06c;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .language-nav a:hover {
+            background: rgba(0, 102, 204, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .language-nav a.active {
+            background: #06c;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+            border-bottom: 3px solid #8b5a2b;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            color: #2c2c2e;
+        }
+
+        h4 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #3a3a3c;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #1d1d1f;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: #f5f5f7;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        tr:hover {
+            background: #fafafa;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+            padding: 25px;
+            border-left: 5px solid #8b5a2b;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .badge-required {
+            background: #8b5a2b;
+            color: #fff;
+        }
+
+        .badge-optional {
+            background: #e0e0e0;
+            color: #515154;
+        }
+
+        .contact-info {
+            background: #f5f5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .contact-info p {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #6e6e73;
+            font-size: 0.9em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1c1c1e;
+            }
+
+            .container {
+                background: #2c2c2e;
+            }
+
+            h1, h2, h3, h4, p, li, strong, th {
+                color: #f5f5f7;
+            }
+
+            header {
+                border-bottom-color: #3a3a3c;
+            }
+
+            .last-updated, .publisher {
+                color: #a1a1a6;
+            }
+
+            .language-nav {
+                background: linear-gradient(135deg, #3a3a3c 0%, #2c2c2e 100%);
+            }
+
+            .language-nav a {
+                color: #5eb3f6;
+            }
+
+            .language-nav a:hover {
+                background: rgba(94, 179, 246, 0.15);
+            }
+
+            .language-nav a.active {
+                background: #0a84ff;
+            }
+
+            h2 {
+                border-bottom-color: #b48c64;
+            }
+
+            th {
+                background: #3a3a3c;
+            }
+
+            th, td {
+                border-bottom-color: #3a3a3c;
+            }
+
+            tr:hover {
+                background: #3a3a3c;
+            }
+
+            .highlight {
+                background: linear-gradient(135deg, #3a3220 0%, #2d2716 100%);
+                border-left-color: #b48c64;
+            }
+
+            .contact-info {
+                background: #3a3a3c;
+            }
+
+            footer {
+                border-top-color: #3a3a3c;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">&#9823;</div>
+            <h1>Politique de Confidentialit&eacute; de SixFour Chess</h1>
+            <p class="last-updated"><strong>Derni&egrave;re mise &agrave; jour :</strong> 15 f&eacute;vrier 2026</p>
+            <p class="publisher"><strong>&Eacute;diteur :</strong> ADOUANI SAS</p>
+            <p class="publisher"><strong>Application :</strong> SixFour - Jeu d'&Eacute;checs (iOS)</p>
+        </header>
+
+        <nav class="language-nav">
+            <strong>Choisir la langue :</strong>
+            <a href="index.html">English</a>
+            <a href="privacy-fr.html" class="active">Fran&ccedil;ais</a>
+            <a href="privacy-it.html">Italiano</a>
+        </nav>
+
+        <main>
+            <h2>Pr&eacute;sentation</h2>
+            <p>SixFour est une application d'&eacute;checs pour iOS et macOS. Elle offre des modes de jeu hors ligne et en ligne. Nous nous engageons &agrave; prot&eacute;ger votre vie priv&eacute;e et &agrave; &ecirc;tre transparents sur nos pratiques en mati&egrave;re de donn&eacute;es conform&eacute;ment au RGPD et &agrave; la r&eacute;glementation CNIL.</p>
+
+            <h2>Responsable du Traitement</h2>
+            <div class="contact-info">
+                <p><strong>ADOUANI SAS</strong></p>
+                <p><strong>Email :</strong> support@sixfourchess.com</p>
+                <p><strong>GitHub :</strong> <a href="https://github.com/ahmedadouani/FreeChess">github.com/ahmedadouani/FreeChess</a></p>
+            </div>
+
+            <h2>Collecte de Donn&eacute;es</h2>
+
+            <h3>Mode Hors Ligne (par d&eacute;faut) <span class="badge badge-required">AUCUNE DONN&Eacute;E COLLECT&Eacute;E</span></h3>
+            <p>En mode hors ligne, <strong>SixFour ne collecte AUCUNE donn&eacute;e personnelle</strong>.</p>
+
+            <h3>Mode En Ligne (optionnel avec votre consentement) <span class="badge badge-optional">N&Eacute;CESSITE CONSENTEMENT</span></h3>
+            <p>Si vous choisissez d'activer le mode multijoueur en ligne, nous utilisons <strong>Firebase</strong> (Google) pour :</p>
+            <ul>
+                <li>Cr&eacute;er des parties en ligne (identifiant de partie anonyme)</li>
+                <li>Synchroniser l'&eacute;tat de la partie entre joueurs</li>
+                <li>G&eacute;rer le matchmaking</li>
+            </ul>
+
+            <div class="highlight">
+                <h4>Donn&eacute;es collect&eacute;es en mode en ligne :</h4>
+                <ul>
+                    <li>Identifiant de partie (g&eacute;n&eacute;r&eacute; al&eacute;atoirement, anonyme)</li>
+                    <li>Coups jou&eacute;s pendant la partie</li>
+                    <li>&Eacute;tat de la partie en cours</li>
+                    <li>Horodatage des actions</li>
+                </ul>
+
+                <h4>Ces donn&eacute;es :</h4>
+                <ul>
+                    <li>Sont anonymes (pas de compte utilisateur, pas d'email, pas de nom)</li>
+                    <li>Sont stock&eacute;es temporairement sur Firebase</li>
+                    <li>Sont supprim&eacute;es automatiquement apr&egrave;s abandon ou fin de partie</li>
+                    <li>Ne sont JAMAIS utilis&eacute;es &agrave; des fins publicitaires</li>
+                </ul>
+            </div>
+
+            <h3>Donn&eacute;es NON Collect&eacute;es</h3>
+            <p>Nous ne collectons PAS :</p>
+            <ul>
+                <li>Nom, pr&eacute;nom ou identit&eacute;</li>
+                <li>Adresse email</li>
+                <li>Localisation GPS</li>
+                <li>Contacts</li>
+                <li>Photos</li>
+                <li>Donn&eacute;es sensibles</li>
+            </ul>
+
+            <h2>Stockage Local des Donn&eacute;es</h2>
+            <p>Toutes les donn&eacute;es de jeu sont stock&eacute;es <strong>localement sur votre appareil uniquement</strong> :</p>
+            <ul>
+                <li>Votre historique de parties</li>
+                <li>Vos param&egrave;tres et pr&eacute;f&eacute;rences</li>
+                <li>Vos parties sauvegard&eacute;es</li>
+                <li>Vos statistiques de jeu</li>
+            </ul>
+            <p>Ces donn&eacute;es :</p>
+            <ul>
+                <li>Restent sur votre appareil en permanence</li>
+                <li>Ne sont jamais transmises &agrave; aucun serveur</li>
+                <li>Ne sont jamais partag&eacute;es avec quiconque</li>
+                <li>Peuvent &ecirc;tre supprim&eacute;es en d&eacute;sinstallant l'application</li>
+            </ul>
+
+            <h2>Autorisations</h2>
+            <p>SixFour ne n&eacute;cessite que les autorisations suivantes :</p>
+            <ul>
+                <li><strong>Acc&egrave;s r&eacute;seau :</strong> Uniquement si vous activez le mode multijoueur en ligne (optionnel)</li>
+                <li>Pas d'acc&egrave;s &agrave; la localisation</li>
+                <li>Pas d'acc&egrave;s &agrave; l'appareil photo</li>
+                <li>Pas d'acc&egrave;s au microphone</li>
+                <li>Pas d'acc&egrave;s &agrave; la phototh&egrave;que</li>
+                <li>Pas d'acc&egrave;s aux contacts</li>
+            </ul>
+
+            <h2>Services Tiers</h2>
+
+            <h3>Firebase (Google Cloud)</h3>
+            <p>SixFour utilise les services Firebase suivants (Google), tous soumis au consentement de l'utilisateur :</p>
+
+            <h4>Firebase Realtime Database (multijoueur en ligne)</h4>
+            <p>Utilis&eacute; uniquement si vous activez le mode multijoueur en ligne :</p>
+            <ul>
+                <li>H&eacute;berger les parties en ligne</li>
+                <li>Synchroniser l'&eacute;tat des parties en temps r&eacute;el</li>
+                <li>Authentification anonyme (aucun email ni mot de passe requis)</li>
+            </ul>
+
+            <h4>Firebase Analytics (analyse de performance) <span class="badge badge-optional">N&Eacute;CESSITE CONSENTEMENT</span></h4>
+            <p>Activ&eacute; uniquement avec votre consentement explicite. Collecte des donn&eacute;es d'utilisation anonymes :</p>
+            <ul>
+                <li>&Eacute;v&eacute;nements de jeu (partie d&eacute;marr&eacute;e, termin&eacute;e, nombre de coups)</li>
+                <li>Aucun identifiant publicitaire (IDFA) n'est collect&eacute;</li>
+            </ul>
+
+            <h4>Firebase Crashlytics (rapports de crash) <span class="badge badge-optional">N&Eacute;CESSITE CONSENTEMENT</span></h4>
+            <p>Activ&eacute; uniquement avec votre consentement explicite. Collecte des donn&eacute;es de crash pour nous aider &agrave; corriger les bugs :</p>
+            <ul>
+                <li>Rapports de crash et traces d'ex&eacute;cution</li>
+                <li>Mod&egrave;le d'appareil et version d'OS</li>
+                <li>Aucune donn&eacute;e personnellement identifiable</li>
+            </ul>
+
+            <div class="contact-info">
+                <p><strong>Sous-traitant :</strong> Google LLC (Firebase), agissant en tant que sous-traitant au sens de l'article 28 du RGPD.</p>
+                <p><strong>Accord de traitement des donn&eacute;es :</strong> Couvert par les <a href="https://firebase.google.com/terms/data-processing-terms">Conditions de traitement des donn&eacute;es Firebase</a>.</p>
+                <p><strong>Politique de Firebase :</strong> <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+            </div>
+
+            <h3>Pas de Services Publicitaires</h3>
+            <p>SixFour n'utilise :</p>
+            <ul>
+                <li>Aucune plateforme publicitaire</li>
+                <li>Aucun identifiant publicitaire (IDFA)</li>
+                <li>Aucun SDK de r&eacute;seaux sociaux</li>
+            </ul>
+
+            <h2>Confidentialit&eacute; des Enfants</h2>
+            <p>SixFour est s&ucirc;r pour les utilisateurs de tous &acirc;ges, y compris les enfants. En mode hors ligne, aucune donn&eacute;e n'est collect&eacute;e. Le mode en ligne n&eacute;cessite le consentement parental.</p>
+
+            <h2>S&eacute;curit&eacute; des Donn&eacute;es</h2>
+            <p>Vos donn&eacute;es de jeu sont prot&eacute;g&eacute;es par :</p>
+            <ul>
+                <li>La s&eacute;curit&eacute; Sandbox d'iOS/macOS (isolation de l'application)</li>
+                <li>Le chiffrement des donn&eacute;es au repos d'iOS/macOS</li>
+                <li>Le chiffrement HTTPS pour les transmissions en ligne</li>
+                <li>Les r&egrave;gles de s&eacute;curit&eacute; Firebase</li>
+            </ul>
+
+            <h2>Modifications de Cette Politique</h2>
+            <p>Nous pouvons mettre &agrave; jour cette politique de confidentialit&eacute; de temps en temps. Tout changement sera refl&eacute;t&eacute; dans la date "Derni&egrave;re mise &agrave; jour" ci-dessus.</p>
+
+            <h2>Vos Droits (RGPD)</h2>
+            <p>Conform&eacute;ment au RGPD, vous disposez des droits suivants :</p>
+
+            <h3>Droit d'Acc&egrave;s</h3>
+            <p>Vous pouvez demander quelles donn&eacute;es nous d&eacute;tenons sur vous. Pour le mode en ligne, vous pouvez consulter vos parties actives dans l'application.</p>
+
+            <h3>Droit de Rectification</h3>
+            <p>Comme nous ne stockons pas de donn&eacute;es personnelles identifiantes, il n'y a pas de donn&eacute;es &agrave; rectifier.</p>
+
+            <h3>Droit &agrave; l'Effacement</h3>
+            <ul>
+                <li><strong>Mode hors ligne :</strong> D&eacute;sinstallez l'application pour supprimer toutes les donn&eacute;es locales</li>
+                <li><strong>Mode en ligne :</strong> Les parties sont automatiquement supprim&eacute;es apr&egrave;s abandon/fin de partie</li>
+                <li><strong>Demande explicite :</strong> Contactez-nous pour supprimer des donn&eacute;es sp&eacute;cifiques</li>
+            </ul>
+
+            <h3>Droit &agrave; la Portabilit&eacute;</h3>
+            <p>Vous pouvez exporter vos donn&eacute;es de jeu locales via les fonctionnalit&eacute;s d'export de l'application.</p>
+
+            <h3>Droit d'Opposition</h3>
+            <p>Vous pouvez refuser l'utilisation du mode multijoueur en ligne &agrave; tout moment via les param&egrave;tres de consentement.</p>
+
+            <h3>Exercice de vos Droits</h3>
+            <div class="contact-info">
+                <p>Pour exercer ces droits, contactez-nous &agrave; : <strong>support@sixfourchess.com</strong></p>
+                <p><strong>D&eacute;lai de r&eacute;ponse :</strong> 30 jours maximum</p>
+            </div>
+
+            <h2>Gestion des Consentements (Cookies &amp; Trackers)</h2>
+            <p>SixFour utilise un syst&egrave;me de gestion des consentements (CMP) conforme &agrave; la CNIL.</p>
+
+            <h3>Cat&eacute;gories de Consentement</h3>
+
+            <h4>1. Strictement N&eacute;cessaires <span class="badge badge-required">TOUJOURS ACTIFS</span></h4>
+            <ul>
+                <li>Fonctionnement de base de l'application</li>
+                <li>Sauvegarde locale des parties</li>
+                <li>Param&egrave;tres utilisateur</li>
+            </ul>
+
+            <h4>2. Fonctionnels <span class="badge badge-optional">OPTIONNEL - N&Eacute;CESSITE ACCORD</span></h4>
+            <ul>
+                <li>Mode multijoueur en ligne</li>
+                <li>Synchronisation des parties via Firebase</li>
+            </ul>
+
+            <h4>3. Performance et Analytique <span class="badge badge-optional">OPTIONNEL - N&Eacute;CESSITE ACCORD</span></h4>
+            <ul>
+                <li>Firebase Analytics (statistiques d'utilisation anonymes)</li>
+                <li>Firebase Crashlytics (rapports de crash)</li>
+            </ul>
+
+            <h3>Gestion de vos Pr&eacute;f&eacute;rences</h3>
+            <p>Vous pouvez modifier vos consentements &agrave; tout moment dans <strong>Param&egrave;tres &rarr; Cookies et Consentement</strong>.</p>
+            <p>Vos choix sont stock&eacute;s localement et respect&eacute;s imm&eacute;diatement.</p>
+
+            <h2>Base L&eacute;gale du Traitement</h2>
+            <ul>
+                <li><strong>Mode hors ligne :</strong> Int&eacute;r&ecirc;t l&eacute;gitime (Article 6(1)(f) RGPD)</li>
+                <li><strong>Mode en ligne :</strong> Consentement explicite (Article 6(1)(a) RGPD)</li>
+                <li><strong>Analytics et Crashlytics :</strong> Consentement explicite (Article 6(1)(a) RGPD)</li>
+            </ul>
+
+            <h2>Dur&eacute;e de Conservation</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type de donn&eacute;es</th>
+                        <th>Dur&eacute;e de conservation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Parties locales</td>
+                        <td>Jusqu'&agrave; d&eacute;sinstallation</td>
+                    </tr>
+                    <tr>
+                        <td>Parties en ligne actives</td>
+                        <td>Dur&eacute;e de la partie</td>
+                    </tr>
+                    <tr>
+                        <td>Parties en ligne termin&eacute;es</td>
+                        <td>Suppression imm&eacute;diate</td>
+                    </tr>
+                    <tr>
+                        <td>Consentements</td>
+                        <td>Jusqu'&agrave; modification par l'utilisateur</td>
+                    </tr>
+                    <tr>
+                        <td>Donn&eacute;es analytiques</td>
+                        <td>14 mois (par d&eacute;faut Firebase)</td>
+                    </tr>
+                    <tr>
+                        <td>Rapports de crash</td>
+                        <td>90 jours (par d&eacute;faut Firebase Crashlytics)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Informations de Contact</h2>
+            <div class="contact-info">
+                <p><strong>Responsable du traitement :</strong> ADOUANI SAS</p>
+                <p><strong>Email DPO/Support :</strong> support@sixfourchess.com</p>
+                <p><strong>GitHub :</strong> <a href="https://github.com/ahmedadouani/FreeChess/issues">github.com/ahmedadouani/FreeChess/issues</a></p>
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Autorit&eacute; de contr&ocirc;le (France) :</strong></p>
+                <p>CNIL - Commission Nationale de l'Informatique et des Libert&eacute;s</p>
+                <p>3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07</p>
+                <p>T&eacute;l&eacute;phone : 01 53 73 22 22</p>
+                <p>Site web : <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+            </div>
+
+            <h2>Conformit&eacute;</h2>
+            <p>Cette application est conforme &agrave; :</p>
+            <ul>
+                <li>RGPD (R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es)</li>
+                <li>CCPA (California Consumer Privacy Act)</li>
+                <li>COPPA (Children's Online Privacy Protection Act)</li>
+                <li>Directives de confidentialit&eacute; de l'Apple App Store</li>
+            </ul>
+
+            <h2>R&eacute;sum&eacute;</h2>
+            <div class="highlight">
+                <p><strong>SixFour est une application d'&eacute;checs qui privil&eacute;gie la confidentialit&eacute; :</strong></p>
+                <ul>
+                    <li>Mode hors ligne par d&eacute;faut : <strong>aucune collecte de donn&eacute;es</strong></li>
+                    <li>Mode en ligne optionnel : <strong>donn&eacute;es anonymes uniquement</strong></li>
+                    <li>Consentement explicite requis pour le multijoueur</li>
+                    <li>Pas de publicit&eacute;, pas de tracking, pas de revente de donn&eacute;es</li>
+                    <li>Conformit&eacute; RGPD et CNIL</li>
+                </ul>
+                <p><strong>Vos parties d'&eacute;checs vous appartiennent.</strong></p>
+            </div>
+        </main>
+
+        <footer>
+            <p><em>Cette politique de confidentialit&eacute; est en vigueur depuis le 15 f&eacute;vrier 2026</em></p>
+            <p><em>Version de l'application : 2.0+</em></p>
+            <p style="margin-top: 20px;">
+                <a href="https://github.com/adouanisas/six-four-chess-site">Voir sur GitHub</a> |
+                <a href="https://apps.apple.com/app/id6755084189">T&eacute;l&eacute;charger sur l'App Store</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
