@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixFour Chess - Informativa sulla Privacy</title>
+    <meta name="description" content="Informativa sulla privacy dell'applicazione SixFour Chess - Conforme GDPR e CNIL">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        .last-updated {
+            color: #6e6e73;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+
+        .publisher {
+            color: #515154;
+            font-weight: 500;
+            margin-top: 8px;
+        }
+
+        .language-nav {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            border-radius: 12px;
+        }
+
+        .language-nav a {
+            display: inline-block;
+            margin: 0 12px;
+            padding: 8px 20px;
+            text-decoration: none;
+            color: #06c;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .language-nav a:hover {
+            background: rgba(0, 102, 204, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .language-nav a.active {
+            background: #06c;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+            border-bottom: 3px solid #8b5a2b;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            color: #2c2c2e;
+        }
+
+        h4 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #3a3a3c;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #1d1d1f;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: #f5f5f7;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        tr:hover {
+            background: #fafafa;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+            padding: 25px;
+            border-left: 5px solid #8b5a2b;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .badge-required {
+            background: #8b5a2b;
+            color: #fff;
+        }
+
+        .badge-optional {
+            background: #e0e0e0;
+            color: #515154;
+        }
+
+        .contact-info {
+            background: #f5f5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .contact-info p {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #6e6e73;
+            font-size: 0.9em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1c1c1e;
+            }
+
+            .container {
+                background: #2c2c2e;
+            }
+
+            h1, h2, h3, h4, p, li, strong, th {
+                color: #f5f5f7;
+            }
+
+            header {
+                border-bottom-color: #3a3a3c;
+            }
+
+            .last-updated, .publisher {
+                color: #a1a1a6;
+            }
+
+            .language-nav {
+                background: linear-gradient(135deg, #3a3a3c 0%, #2c2c2e 100%);
+            }
+
+            .language-nav a {
+                color: #5eb3f6;
+            }
+
+            .language-nav a:hover {
+                background: rgba(94, 179, 246, 0.15);
+            }
+
+            .language-nav a.active {
+                background: #0a84ff;
+            }
+
+            h2 {
+                border-bottom-color: #b48c64;
+            }
+
+            th {
+                background: #3a3a3c;
+            }
+
+            th, td {
+                border-bottom-color: #3a3a3c;
+            }
+
+            tr:hover {
+                background: #3a3a3c;
+            }
+
+            .highlight {
+                background: linear-gradient(135deg, #3a3220 0%, #2d2716 100%);
+                border-left-color: #b48c64;
+            }
+
+            .contact-info {
+                background: #3a3a3c;
+            }
+
+            a {
+                color: #5eb3f6;
+            }
+
+            .language-nav a.active {
+                color: #fff;
+            }
+
+            td {
+                color: #f5f5f7;
+            }
+
+            .badge-optional {
+                background: #48484a;
+                color: #a1a1a6;
+            }
+
+            footer {
+                border-top-color: #3a3a3c;
+                color: #a1a1a6;
+            }
+
+            footer a {
+                color: #5eb3f6;
+            }
+
+            table {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">&#9823;</div>
+            <h1>Informativa sulla Privacy di SixFour Chess</h1>
+            <p class="last-updated"><strong>Ultimo aggiornamento:</strong> 15 febbraio 2026</p>
+            <p class="publisher"><strong>Editore:</strong> ADOUANI SAS</p>
+            <p class="publisher"><strong>Applicazione:</strong> SixFour - Gioco di Scacchi (iOS)</p>
+        </header>
+
+        <nav class="language-nav">
+            <strong>Seleziona lingua:</strong>
+            <a href="index.html">English</a>
+            <a href="privacy-fr.html">Fran&ccedil;ais</a>
+            <a href="privacy-it.html" class="active">Italiano</a>
+        </nav>
+
+        <main>
+            <h2>Panoramica</h2>
+            <p>SixFour &egrave; un'app di scacchi per iPhone focalizzata sul gioco locale contro l'IA. Questa versione dell'app non offre pi&ugrave; il multigiocatore online. Ci impegniamo a proteggere la vostra privacy e a spiegare chiaramente cosa rimane sul dispositivo e cosa pu&ograve; usare la rete.</p>
+
+            <h2>Titolare del Trattamento</h2>
+            <div class="contact-info">
+                <p><strong>ADOUANI SAS</strong></p>
+                <p><strong>Email:</strong> adouani.sas@gmail.com</p>
+                <p><strong>Sito web:</strong> <a href="https://github.com/adouanisas/six-four-chess-site">github.com/adouanisas/six-four-chess-site</a></p>
+            </div>
+
+            <h2>Cosa resta sul vostro dispositivo</h2>
+            <p>La maggior parte di SixFour funziona interamente in locale. L'app memorizza solo sul vostro dispositivo:</p>
+            <ul>
+                <li>La partita in corso</li>
+                <li>Lo storico locale delle partite concluse</li>
+                <li>I dati di replay mossa per mossa</li>
+                <li>La difficolt&agrave; scelta e le preferenze</li>
+                <li>Le impostazioni come suoni e messaggi di coaching</li>
+            </ul>
+            <p>Questi dati locali non vengono inviati ai nostri server.</p>
+
+            <h2>Cosa pu&ograve; usare la rete</h2>
+            <div class="highlight">
+                <p>L'app pu&ograve; usare la rete solo in casi limitati:</p>
+                <ul>
+                    <li><strong>Difficolt&agrave; Maestro:</strong> posizioni di scacchi in formato FEN possono essere inviate a servizi di analisi per calcolare una mossa pi&ugrave; forte.</li>
+                    <li><strong>Preferenze privacy:</strong> se in una futura versione verranno attivati servizi opzionali di analisi o crash reporting, saranno descritti qui prima di qualsiasi attivazione.</li>
+                </ul>
+            </div>
+
+            <h3>Analisi cloud per la difficolt&agrave; Maestro</h3>
+            <p>Quando scegliete la difficolt&agrave; <strong>Maestro</strong>, SixFour pu&ograve; inviare una posizione di scacchi in formato FEN a fornitori di analisi esterni per calcolare la mossa dell'IA.</p>
+            <ul>
+                <li>Nessun account richiesto</li>
+                <li>Nessun indirizzo email inviato</li>
+                <li>Nessun nome, contatto, foto o dato di posizione inviato</li>
+                <li>Il contenuto trasmesso &egrave; limitato ai dati di posizione necessari all'analisi</li>
+            </ul>
+
+            <h2>Servizi di terze parti</h2>
+
+            <h3>Fornitori di analisi cloud</h3>
+            <p>Solo per la difficolt&agrave; Maestro, SixFour pu&ograve; contattare i seguenti servizi:</p>
+            <ul>
+                <li><a href="https://lichess.org">lichess.org</a></li>
+                <li><a href="https://stockfish.online">stockfish.online</a></li>
+            </ul>
+            <p>Questi servizi ricevono dati di posizione scacchistica per calcolare una mossa. Le loro informative privacy si applicano al trattamento che effettuano.</p>
+
+            <h3>Nessun Servizio Pubblicitario</h3>
+            <p>SixFour NON utilizza:</p>
+            <ul>
+                <li>SDK pubblicitari</li>
+                <li>Identificatori pubblicitari (IDFA)</li>
+                <li>SDK di social media</li>
+                <li>Servizi di multigiocatore online o matchmaking</li>
+            </ul>
+
+            <h2>Autorizzazioni</h2>
+            <p>SixFour non richiede accesso a funzioni sensibili del dispositivo.</p>
+            <ul>
+                <li><strong>Accesso alla rete:</strong> solo per l'analisi della difficolt&agrave; Maestro e i link web</li>
+                <li>Nessun accesso alla posizione</li>
+                <li>Nessun accesso alla fotocamera</li>
+                <li>Nessun accesso al microfono</li>
+                <li>Nessun accesso alla libreria foto</li>
+                <li>Nessun accesso ai contatti</li>
+            </ul>
+
+            <h2>Sicurezza dei dati</h2>
+            <p>I vostri dati locali beneficiano del sandbox applicativo di iOS e delle protezioni del sistema. Gli scambi di rete usati per la difficolt&agrave; Maestro si basano su connessioni HTTPS fornite dai servizi terzi coinvolti.</p>
+
+            <h2>Modifiche a Questa Informativa</h2>
+            <p>Potremmo aggiornare questa informativa sulla privacy di tanto in tanto. Eventuali modifiche saranno riflesse nella data "Ultimo aggiornamento" sopra.</p>
+
+            <h2>I vostri diritti</h2>
+            <p>Ai sensi del GDPR, potete contattarci per qualsiasi domanda relativa a questa informativa o a un trattamento di dati sotto la nostra responsabilit&agrave;.</p>
+
+            <h3>Accesso e cancellazione</h3>
+            <ul>
+                <li><strong>Dati locali:</strong> potete eliminarli disinstallando l'app.</li>
+                <li><strong>Domande o richieste:</strong> contattateci a <strong>adouani.sas@gmail.com</strong>.</li>
+            </ul>
+
+            <h3>Tempo di risposta</h3>
+            <p>Cerchiamo di rispondere entro 30 giorni.</p>
+
+            <h2>Preferenze privacy</h2>
+            <p>SixFour integra controlli di privacy nell'app. Queste preferenze sono memorizzate localmente sul dispositivo e applicate immediatamente.</p>
+            <p>L'app oggi &egrave; centrata sul gioco locale. Non esiste pi&ugrave; un account online, un matchmaking o un profilo giocatore ospitato da noi.</p>
+
+            <h2>Base giuridica</h2>
+            <ul>
+                <li><strong>Gioco locale e archiviazione:</strong> interesse legittimo a fornire la funzionalit&agrave; principale dell'app.</li>
+                <li><strong>Analisi di rete per la difficolt&agrave; Maestro:</strong> necessaria a fornire la funzionalit&agrave; che scegliete di usare esplicitamente.</li>
+            </ul>
+
+            <h2>Periodo di conservazione</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo di dati</th>
+                        <th>Periodo di conservazione</th>
+                        <th>Luogo di archiviazione</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Partita in corso, storico, preferenze</td>
+                        <td>Fino a eliminazione da parte vostra o disinstallazione</td>
+                        <td>Solo sul vostro dispositivo</td>
+                    </tr>
+                    <tr>
+                        <td>Richieste di posizione per la difficolt&agrave; Maestro</td>
+                        <td>Non conservate da noi</td>
+                        <td>Trattate da fornitori di analisi terzi</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Privacy dei minori</h2>
+            <p>SixFour pu&ograve; essere usato da giocatori di tutte le et&agrave;. Poich&eacute; l'app funziona principalmente in locale e non richiede un account, l'esposizione di dati personali &egrave; limitata.</p>
+
+            <h2>Modifiche a questa informativa</h2>
+            <p>Possiamo aggiornare questa informativa se l'app cambia. La data in alto indica l'ultima revisione.</p>
+
+            <h2>Informazioni di contatto</h2>
+            <div class="contact-info">
+                <p><strong>Titolare del trattamento:</strong> ADOUANI SAS</p>
+                <p><strong>Email:</strong> adouani.sas@gmail.com</p>
+                <p><strong>Sito web:</strong> <a href="https://github.com/adouanisas/six-four-chess-site">github.com/adouanisas/six-four-chess-site</a></p>
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Autorit&agrave; di controllo (Francia):</strong></p>
+                <p>CNIL - Commission Nationale de l'Informatique et des Libert&eacute;s</p>
+                <p>3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07</p>
+                <p>Telefono: +33 1 53 73 22 22</p>
+                <p>Sito web: <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+            </div>
+
+        </main>
+
+        <footer>
+            <p><em>Questa informativa sulla privacy &egrave; in vigore dal 15 febbraio 2026</em></p>
+            <p><em>Versione dell'applicazione: 2.0+</em></p>
+            <p style="margin-top: 20px;">
+                <a href="https://github.com/adouanisas/six-four-chess-site">Vedi su GitHub</a> |
+                <a href="https://apps.apple.com/app/id6755084189">Scarica dall'App Store</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
